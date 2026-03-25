@@ -7,7 +7,7 @@ accelerate launch \
     --model_name_or_path Qwen/Qwen3-1.7B \
     --learning_rate 5e-6 \
     --max_grad_norm 0.1 \
-    --per_device_train_batch_size 2 \
+    --per_device_train_batch_size 8 \
     --gradient_checkpointing \
     --gradient_accumulation_steps 2 \
     --output_dir  ./output/opsd \
